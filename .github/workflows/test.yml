@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [12.22.0, 12.x, 14.x, 16.x, 18.x, 20.x]
+        node: [16.14.0, 16.x, 18.x, 20.x]
 
     steps:
     - name: Checkout 🛎️
@@ -46,7 +46,7 @@ jobs:
     - name: Node 🧰
       uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: 18.x
 
     - name: Install 📦
       run: yarn --immutable
@@ -78,7 +78,7 @@ jobs:
   #   - name: Node 🧰
   #     uses: actions/setup-node@v3
   #     with:
-  #       node-version: 14.x
+  #       node-version: 18.x
 
   #   - name: Install 📦
   #     run: yarn --immutable
